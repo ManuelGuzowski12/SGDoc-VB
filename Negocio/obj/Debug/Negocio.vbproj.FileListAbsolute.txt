@@ -1,0 +1,15 @@
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\bin\Debug\Negocio.dll
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\bin\Debug\Negocio.pdb
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\bin\Debug\Negocio.xml
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\bin\Debug\Datos.dll
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\bin\Debug\Entidades.dll
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\bin\Debug\Datos.pdb
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\bin\Debug\Datos.xml
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\bin\Debug\Entidades.pdb
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\bin\Debug\Entidades.xml
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\obj\Debug\Negocio.vbprojResolveAssemblyReference.cache
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\obj\Debug\Negocio.Resources.resources
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\obj\Debug\Negocio.vbproj.GenerateResource.Cache
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\obj\Debug\Negocio.dll
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\obj\Debug\Negocio.xml
+C:\Users\robe\Desktop\Soft5\SGDoc\Negocio\obj\Debug\Negocio.pdb

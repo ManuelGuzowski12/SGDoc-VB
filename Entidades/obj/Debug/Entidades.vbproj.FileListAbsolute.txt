@@ -1,0 +1,9 @@
+C:\Users\robe\Desktop\Soft5\SGDoc\Entidades\bin\Debug\Entidades.dll
+C:\Users\robe\Desktop\Soft5\SGDoc\Entidades\bin\Debug\Entidades.pdb
+C:\Users\robe\Desktop\Soft5\SGDoc\Entidades\bin\Debug\Entidades.xml
+C:\Users\robe\Desktop\Soft5\SGDoc\Entidades\obj\Debug\Entidades.Resources.resources
+C:\Users\robe\Desktop\Soft5\SGDoc\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.Cache
+C:\Users\robe\Desktop\Soft5\SGDoc\Entidades\obj\Debug\Entidades.dll
+C:\Users\robe\Desktop\Soft5\SGDoc\Entidades\obj\Debug\Entidades.xml
+C:\Users\robe\Desktop\Soft5\SGDoc\Entidades\obj\Debug\Entidades.pdb
+C:\Users\robe\Desktop\Soft5\SGDoc\Entidades\obj\Debug\Entidades.vbprojResolveAssemblyReference.cache
