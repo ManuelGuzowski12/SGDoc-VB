@@ -18,3 +18,6 @@ C:\Users\robe\Desktop\Soft5\SGDoc\SGDoc\bin\Debug\Datos.pdb
 C:\Users\robe\Desktop\Soft5\SGDoc\SGDoc\bin\Debug\Datos.xml
 C:\Users\robe\Desktop\Soft5\SGDoc\SGDoc\obj\Debug\Presentacion.vbprojResolveAssemblyReference.cache
 C:\Users\robe\Desktop\Soft5\SGDoc\SGDoc\obj\Debug\SGDoc.Usuarios.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.exe
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.xml
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.pdb
