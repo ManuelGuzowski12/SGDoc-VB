@@ -7,6 +7,7 @@ Public Class Usuarios
     Dim usuario As New UsersEntidades
     Private Sub Usuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dgv.DataSource = UsuarioBOL.GetAll()
+        Label_username.Text = user
     End Sub
 
 
@@ -19,7 +20,7 @@ Public Class Usuarios
         usuario.sexo = txt_sexo.Text
         usuario.username = txt_username.Text
         usuario.password = txt_password.Text
-        UsuarioBOL.Save(usuario)
+        UsuarioBOL.Save_User(usuario)
         dgv.DataSource = UsuarioBOL.GetAll()
     End Sub
 
@@ -44,7 +45,7 @@ Public Class Usuarios
         usuario.sexo = txt_sexo.Text
         usuario.username = txt_username.Text
         usuario.password = txt_password.Text
-        UsuarioBOL.Save(usuario)
+        UsuarioBOL.Update_User(usuario)
         dgv.DataSource = UsuarioBOL.GetAll()
         Clear_textbox()
     End Sub

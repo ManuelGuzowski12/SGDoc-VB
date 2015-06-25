@@ -116,6 +116,18 @@ Public NotInheritable Class UsuarioDAL
         Return nrorecord
 
     End Function
+    Public Shared Function Verify_password(password As String)
+        Dim nrorecord As Integer = 0
+        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
+       & "Integrated Security=true;user id=student;password=12345")
+            conn.Open()
+            Dim sql As String = "SELECT Count(*) FROM Usuarios Where password = @password"
+            Dim cmd As New SqlCommand(sql, conn)
+            cmd.Parameters.AddWithValue("password", password)
+            nrorecord = Convert.ToInt32(cmd.ExecuteScalar)
+        End Using
+        Return nrorecord > 0
+    End Function
 
     Private Shared Function LoadUsuario(reader As IDataReader) As UsersEntidades
         Dim user As New UsersEntidades

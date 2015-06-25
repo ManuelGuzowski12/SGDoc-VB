@@ -42,6 +42,8 @@ Partial Class Usuarios
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Button_Eliminar_user = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label_username = New System.Windows.Forms.Label()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -126,6 +128,7 @@ Partial Class Usuarios
         '
         Me.txt_password.Location = New System.Drawing.Point(647, 67)
         Me.txt_password.Name = "txt_password"
+        Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_password.Size = New System.Drawing.Size(100, 23)
         Me.txt_password.TabIndex = 10
         '
@@ -210,11 +213,31 @@ Partial Class Usuarios
         Me.Button_Eliminar_user.Text = "Eliminar"
         Me.Button_Eliminar_user.UseVisualStyleBackColor = True
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(652, -2)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(67, 15)
+        Me.Label9.TabIndex = 20
+        Me.Label9.Text = "Loged as"
+        '
+        'Label_username
+        '
+        Me.Label_username.AutoSize = True
+        Me.Label_username.Location = New System.Drawing.Point(725, -2)
+        Me.Label_username.Name = "Label_username"
+        Me.Label_username.Size = New System.Drawing.Size(74, 15)
+        Me.Label_username.TabIndex = 21
+        Me.Label_username.Text = "Username"
+        '
         'Usuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(801, 330)
+        Me.Controls.Add(Me.Label_username)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Button_Eliminar_user)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -264,4 +287,6 @@ Partial Class Usuarios
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Button_Eliminar_user As System.Windows.Forms.Button
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label_username As System.Windows.Forms.Label
 End Class
