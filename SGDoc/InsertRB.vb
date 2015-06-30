@@ -3,13 +3,15 @@ Imports Entidades
 Public Class InsertRB
     Dim rbod As New RacksBodegaEntity
     Private Sub InsertRB_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ComboBox1.DataSource = RackBodegaBO.GetRack
+
         ComboBox1.DisplayMember = "codigo"
         ComboBox1.ValueMember = "id_rack"
+        ComboBox1.DataSource = RackBodegaBO.GetRack
 
-        ComboBox2.DataSource = RackBodegaBO.GetBodega
+
         ComboBox2.DisplayMember = "codigo"
         ComboBox2.ValueMember = "id_bodega"
+        ComboBox2.DataSource = RackBodegaBO.GetBodega
 
         txtuser.Text = id_user
         txtuser.Enabled = False
@@ -21,5 +23,6 @@ Public Class InsertRB
         rbod.fecha_insercion = txtdate.Text
         rbod.id_usuario = txtuser.Text
         RackBodegaBO.Guardar(rbod)
+        ComboBox1.DataSource = RackBodegaBO.GetRack
     End Sub
 End Class

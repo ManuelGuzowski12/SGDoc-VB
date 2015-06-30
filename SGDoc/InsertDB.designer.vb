@@ -24,7 +24,6 @@ Partial Class InsertDB
     Private Sub InitializeComponent()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtdate = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
@@ -32,6 +31,7 @@ Partial Class InsertDB
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtuser = New System.Windows.Forms.TextBox()
+        Me.txtdate = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Button2
@@ -52,13 +52,6 @@ Partial Class InsertDB
         Me.Label3.Size = New System.Drawing.Size(37, 13)
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Fecha"
-        '
-        'txtdate
-        '
-        Me.txtdate.Location = New System.Drawing.Point(36, 208)
-        Me.txtdate.Name = "txtdate"
-        Me.txtdate.Size = New System.Drawing.Size(100, 20)
-        Me.txtdate.TabIndex = 13
         '
         'Button1
         '
@@ -121,11 +114,19 @@ Partial Class InsertDB
         Me.txtuser.Size = New System.Drawing.Size(100, 20)
         Me.txtuser.TabIndex = 20
         '
+        'txtdate
+        '
+        Me.txtdate.Location = New System.Drawing.Point(36, 211)
+        Me.txtdate.Name = "txtdate"
+        Me.txtdate.Size = New System.Drawing.Size(100, 20)
+        Me.txtdate.TabIndex = 22
+        '
         'InsertDB
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(529, 265)
+        Me.Controls.Add(Me.txtdate)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtuser)
         Me.Controls.Add(Me.Label1)
@@ -134,7 +135,6 @@ Partial Class InsertDB
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.txtdate)
         Me.Controls.Add(Me.Button1)
         Me.Name = "InsertDB"
         Me.Text = "InsertDB"
@@ -144,7 +144,6 @@ Partial Class InsertDB
     End Sub
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents txtdate As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
@@ -152,4 +151,5 @@ Partial Class InsertDB
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtuser As System.Windows.Forms.TextBox
+    Friend WithEvents txtdate As System.Windows.Forms.TextBox
 End Class

@@ -36,7 +36,7 @@ Public Class InsertCR
 
             CajaRackBO.Guardar(cajar)
             MsgBox("Insertado Correctamente...")
-            Me.Close()
+            ComboBox1.DataSource = CajaRackBO.GetCaja
 
         Else
             MsgBox("Depertamento equivocado o Rack lleno ")

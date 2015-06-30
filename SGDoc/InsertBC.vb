@@ -38,7 +38,7 @@ Public Class InsertBC
 
             BindingCajasBO.Guardar(binc)
             MsgBox("Insertado Correctamente...")
-            Me.Close()
+            ComboBox1.DataSource = BindingCajasBO.GetBinding
 
         Else
             MsgBox("Depertamento equivocado o Caja llena ")

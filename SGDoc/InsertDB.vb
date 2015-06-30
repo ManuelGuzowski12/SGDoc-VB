@@ -38,7 +38,7 @@ Public Class InsertDB
             docb.id_usuario = txtuser.Text
             DocBindingBO.Guardar(docb)
             MsgBox("Insertado Correctamente...")
-            Me.Close()
+            ComboBox1.DataSource = DocBindingBO.GetDoc
 
         Else
             MsgBox("Depertamento equivocado o Binding lleno")
@@ -66,4 +66,5 @@ Public Class InsertDB
         cap = DocBindingBO.Getcap(tipob)
         cont = DocBindingBO.Count(CInt(ComboBox2.SelectedValue.ToString))
     End Sub
+
 End Class
