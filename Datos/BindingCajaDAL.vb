@@ -10,8 +10,7 @@ Public NotInheritable Class BindingCajaDAL
     End Sub
 
     Public Shared Function Create(binc As BindingCajaEntity) As BindingCajaEntity
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
- & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "INSERT INTO Binding_Caja (id_binding, id_caja,  id_usuario, fecha_insercion) " & _
                                 "VALUES ( @id_binding, @id_caja, @id_usuario, @fecha_insercion) "
@@ -33,8 +32,7 @@ Public NotInheritable Class BindingCajaDAL
     Public Shared Function GetBinding() As List(Of BindingEntity)
         Dim list As New List(Of BindingEntity)()
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "select id_binding, codigo from Binding where id_binding not in (select id_binding from Binding_Caja)"
@@ -64,8 +62,7 @@ Public NotInheritable Class BindingCajaDAL
         Dim list As New List(Of CajaEntity)()
 
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_caja, codigo from Cajas"
@@ -94,8 +91,7 @@ Public NotInheritable Class BindingCajaDAL
     'trae el id del dep del Binding
     Public Shared Function Getdepbin(id_dep As Integer) As Integer
         Dim depb As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_dep FROM Binding where id_binding = @id_dep "
@@ -112,8 +108,7 @@ Public NotInheritable Class BindingCajaDAL
     'trae el id del dep de la caja
     Public Shared Function Getdepcaja(id_dep As Integer) As Integer
         Dim depc As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_dep FROM Cajas where id_caja = @id_dep "
@@ -130,8 +125,7 @@ Public NotInheritable Class BindingCajaDAL
     '-----cuantas cajas hay en el id que le envio
     Public Shared Function count(id_caja As Integer) As Integer
         Dim idcaja As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT COUNT(*) FROM Binding_Caja where id_caja = @id_caja "
@@ -149,8 +143,7 @@ Public NotInheritable Class BindingCajaDAL
     Public Shared Function Getcap(id_tipo As Integer) As Integer
         Dim cap As Integer
         ' cap = 0
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "select capacidad  from TipoCaja where id_tipo = @id_tipo "
@@ -167,8 +160,7 @@ Public NotInheritable Class BindingCajaDAL
     'compara el id del tipo de la caja
     Public Shared Function GetTipoC(id_caja As Integer) As Integer
         Dim idtipo As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_tipo FROM Cajas where id_caja = @id_caja "

@@ -12,8 +12,7 @@ Public NotInheritable Class CajaDAL
     Public Shared Function Exists(id_caja As Integer) As Boolean
         Dim nrorecord As Integer = 0
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT Count(*) " & _
@@ -29,8 +28,7 @@ Public NotInheritable Class CajaDAL
 
     End Function
     Public Shared Function Create(caja As CajaEntity) As CajaEntity
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
- & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "INSERT INTO Cajas (id_tipo, id_dep, codigo) " & _
                                 "VALUES ( @id_tipo, @id_dep, @codigo) "
@@ -50,8 +48,7 @@ Public NotInheritable Class CajaDAL
 
 
     Public Shared Function Update(caja As CajaEntity) As CajaEntity
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
- & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "UPDATE Cajas SET  " & _
                                 "id_tipo = @id_tipo, " & _
@@ -76,8 +73,7 @@ Public NotInheritable Class CajaDAL
         Dim list As New List(Of CajaEntity)()
 
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_caja, id_tipo, id_dep, codigo FROM Cajas ORDER BY codigo"
@@ -106,8 +102,7 @@ Public NotInheritable Class CajaDAL
     Public Shared Function GetTipo() As List(Of Tipos)
         Dim list As New List(Of Tipos)()
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT  id_tipo, capacidad FROM TipoCaja"

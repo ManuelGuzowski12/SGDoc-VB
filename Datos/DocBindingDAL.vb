@@ -10,8 +10,7 @@ Public NotInheritable Class DocBindingDAL
     End Sub
 
     Public Shared Function Create(docb As DocBindingEntity) As DocBindingEntity
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
- & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "INSERT INTO Doc_binding (id_documento, id_binding, id_usuario, fecha_insercion) " & _
                                 "VALUES ( @id_documento, @id_binding, @id_usuario, @fecha_insercion) "
@@ -35,8 +34,7 @@ Public NotInheritable Class DocBindingDAL
         Dim list As New List(Of Documentos)()
 
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "select id_documento, nombre from Documentos where id_documento not in (select id_documento from Doc_binding)"
@@ -66,8 +64,7 @@ Public NotInheritable Class DocBindingDAL
     Public Shared Function GetBinding() As List(Of BindingEntity)
         Dim list As New List(Of BindingEntity)()
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_binding, codigo from Binding"
@@ -95,8 +92,7 @@ Public NotInheritable Class DocBindingDAL
     'trae el id del dep del documento
     Public Shared Function Getdepdoc(id_dep As Integer) As Integer
         Dim dep As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_dep FROM Documentos where id_documento = @id_dep "
@@ -113,8 +109,7 @@ Public NotInheritable Class DocBindingDAL
     'trae el id del dep del Binding
     Public Shared Function Getdepbin(id_dep As Integer) As Integer
         Dim depb As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_dep FROM Binding where id_binding = @id_dep "
@@ -132,8 +127,7 @@ Public NotInheritable Class DocBindingDAL
     'cuenta cuantos binding hay con el id que le envio
     Public Shared Function count(id_binding As Integer) As Integer
         Dim idbin As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT COUNT(*) FROM Doc_binding where id_binding = @id_binding "
@@ -151,8 +145,7 @@ Public NotInheritable Class DocBindingDAL
     Public Shared Function Getcap(id_tipo As Integer) As Integer
         Dim cap As Integer
         ' cap = 0
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "select capacidad  from TipoBinding where id_tipo = @id_tipo "
@@ -169,8 +162,7 @@ Public NotInheritable Class DocBindingDAL
     'compara el ide del tipo del binding
     Public Shared Function GetTipoB(id_binding As Integer) As Integer
         Dim idtipo As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_tipo FROM Binding where id_binding = @id_binding "

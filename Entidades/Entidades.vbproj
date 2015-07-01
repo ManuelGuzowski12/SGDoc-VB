@@ -65,11 +65,15 @@
     <Compile Include="BindingCajaEntity.vb" />
     <Compile Include="BindingEntity.vb" />
     <Compile Include="BodegaEntity.vb" />
+    <Compile Include="Buscar.vb" />
     <Compile Include="CajaEntity.vb" />
     <Compile Include="CajasRackEntity.vb" />
+    <Compile Include="DatosBusqueda.vb" />
     <Compile Include="Departamento.vb" />
+    <Compile Include="Departamentos.vb" />
     <Compile Include="DocBindingEntity.vb" />
     <Compile Include="Documentos.vb" />
+    <Compile Include="Imagenes.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -86,8 +90,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="PersonaEntidades.vb" />
+    <Compile Include="Plantillas.vb" />
     <Compile Include="RackEntity.vb" />
     <Compile Include="RacksBodegaEntity.vb" />
+    <Compile Include="TipoDoc.vb" />
     <Compile Include="Tipos.vb" />
     <Compile Include="UsersEntidades.vb" />
   </ItemGroup>

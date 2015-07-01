@@ -74,13 +74,13 @@ Partial Class Menu_Principal
         'CrearToolStripMenuItem
         '
         Me.CrearToolStripMenuItem.Name = "CrearToolStripMenuItem"
-        Me.CrearToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
+        Me.CrearToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.CrearToolStripMenuItem.Text = "Crear "
         '
         'ModificarToolStripMenuItem
         '
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
         'AdministracionFisicaToolStripMenuItem
@@ -94,7 +94,7 @@ Partial Class Menu_Principal
         '
         Me.BindingToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearNuevoBindingToolStripMenuItem, Me.InsertarDocumentoEnBindingToolStripMenuItem})
         Me.BindingToolStripMenuItem.Name = "BindingToolStripMenuItem"
-        Me.BindingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BindingToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.BindingToolStripMenuItem.Text = "Binding"
         '
         'CrearNuevoBindingToolStripMenuItem
@@ -113,7 +113,7 @@ Partial Class Menu_Principal
         '
         Me.CajasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearNuevaCajaToolStripMenuItem, Me.InsertarBindingEnCajaToolStripMenuItem})
         Me.CajasToolStripMenuItem.Name = "CajasToolStripMenuItem"
-        Me.CajasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CajasToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.CajasToolStripMenuItem.Text = "Cajas"
         '
         'CrearNuevaCajaToolStripMenuItem
@@ -132,7 +132,7 @@ Partial Class Menu_Principal
         '
         Me.RacksToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearNuevoRackToolStripMenuItem, Me.InsertarRackEnBodegaToolStripMenuItem})
         Me.RacksToolStripMenuItem.Name = "RacksToolStripMenuItem"
-        Me.RacksToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RacksToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.RacksToolStripMenuItem.Text = "Racks"
         '
         'CrearNuevoRackToolStripMenuItem
@@ -151,7 +151,7 @@ Partial Class Menu_Principal
         '
         Me.BodegasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CrearNuevaBodegaToolStripMenuItem, Me.InsertarRackABodegaToolStripMenuItem})
         Me.BodegasToolStripMenuItem.Name = "BodegasToolStripMenuItem"
-        Me.BodegasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BodegasToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.BodegasToolStripMenuItem.Text = "Bodegas"
         '
         'CrearNuevaBodegaToolStripMenuItem

@@ -48,3 +48,6 @@ C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertBC.resources
 C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertCR.resources
 C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertDB.resources
 C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertRB.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.doc.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.ImpImagen.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.VerDoc.resources

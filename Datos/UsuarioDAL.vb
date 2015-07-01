@@ -11,8 +11,7 @@ Public NotInheritable Class UsuarioDAL
 
     Public Shared Function GetAll() As List(Of UsersEntidades)
         Dim list As New List(Of UsersEntidades)
-        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
-             & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "SELECT p.id_persona, p.nombre, p.apellido, p.direccion, p.telefono, p.sexo," & _
                 " u.id_usuario, u.username, u.password  FROM Personas p, Usuarios u WHERE u.id_persona = p.id_persona and state = 0"
@@ -26,8 +25,7 @@ Public NotInheritable Class UsuarioDAL
     End Function
 
     Public Shared Function Insert(usuario As UsersEntidades) As UsersEntidades
-        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
-             & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "INSERT INTO Personas (id_persona, nombre, apellido, direccion, telefono, sexo) " & _
                               "VALUES (@id_persona, @nombre, @apellido, @direccion, @telefono, @sexo);" _
@@ -50,8 +48,7 @@ Public NotInheritable Class UsuarioDAL
     End Function
     Public Shared Function Update(usuario As UsersEntidades) As UsersEntidades
 
-        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
-       & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "UPDATE Personas SET nombre = @nombre, apellido = @apellido, direccion = @direccion, " & _
@@ -73,8 +70,7 @@ Public NotInheritable Class UsuarioDAL
         Return usuario
     End Function
     Public Shared Function setPermisos(id_usuario As Integer)
-        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
-      & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "insert into User_Mod(id_modulo, id_usuario, permiso)select  id_modulo,@id_usuario,'0' from  Modulo"
             Dim cmd As New SqlCommand(sql, conn)
@@ -86,8 +82,7 @@ Public NotInheritable Class UsuarioDAL
     End Function
     Public Shared Function Desactivar_user(id_persona As String)
         Dim usuario As UsersEntidades = Nothing
-        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
-       & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "Update Usuarios SET state = 1 WHERE id_persona = @id_persona"
             Dim cmd As New SqlCommand(sql, conn)
@@ -98,8 +93,7 @@ Public NotInheritable Class UsuarioDAL
     End Function
     Public Shared Function Exist(id_persona As String)
         Dim nrorecord As Integer = 0
-        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
-       & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "SELECT Count(*) " & _
                                 "FROM Usuarios " & _
@@ -114,8 +108,7 @@ Public NotInheritable Class UsuarioDAL
     End Function
     Public Shared Function Verify_User(username As String, password As String)
         Dim nrorecord As Integer = 0
-        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
-       & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "SELECT Count(*) " & _
                                 "FROM usuarios " & _
@@ -131,8 +124,7 @@ Public NotInheritable Class UsuarioDAL
     End Function
     Public Shared Function Verify_password(password As String)
         Dim nrorecord As Integer = 0
-        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
-       & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "SELECT Count(*) FROM Usuarios Where password = @password"
             Dim cmd As New SqlCommand(sql, conn)
@@ -143,8 +135,7 @@ Public NotInheritable Class UsuarioDAL
     End Function
     Public Shared Function Get_idusuario(username As String)
         Dim idusuario As Integer
-        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
-       & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "SELECT id_usuario from Usuarios where username = @username"
             Dim cmd As New SqlCommand(sql, conn)

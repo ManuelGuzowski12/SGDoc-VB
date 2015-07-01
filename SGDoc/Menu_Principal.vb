@@ -93,4 +93,13 @@ Public Class Menu_Principal
     Private Sub InsertarRackABodegaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InsertarRackABodegaToolStripMenuItem.Click
         InsertRB.Show()
     End Sub
+
+    Private Sub CrearToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearToolStripMenuItem.Click
+        doc.Show()
+
+    End Sub
+
+    Private Sub ModificarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificarToolStripMenuItem.Click
+        VerDoc.Show()
+    End Sub
 End Class

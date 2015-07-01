@@ -12,8 +12,7 @@ Public NotInheritable Class BodegaDAL
     Public Shared Function Exists(id_bodega As Integer) As Boolean
         Dim nrorecord As Integer = 0
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT Count(*) " & _
@@ -30,8 +29,7 @@ Public NotInheritable Class BodegaDAL
     End Function
 
     Public Shared Function Create(bodega As BodegaEntity) As BodegaEntity
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
- & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "INSERT INTO Bodegas (capacidad, codigo, descripcion) " & _
                                 "VALUES ( @capacidad, @codigo, @descripcion) "
@@ -53,8 +51,7 @@ Public NotInheritable Class BodegaDAL
         Dim list As New List(Of BodegaEntity)()
 
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_bodega, capacidad, codigo, descripcion FROM Bodegas ORDER BY codigo"
@@ -71,8 +68,7 @@ Public NotInheritable Class BodegaDAL
     End Function
 
     Public Shared Function Update(bodega As BodegaEntity) As BodegaEntity
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
- & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "UPDATE Bodegas SET  " & _
                                 "capacidad = @capacidad, " & _

@@ -68,7 +68,11 @@
     <Compile Include="BodegaBO.vb" />
     <Compile Include="CajaBO.vb" />
     <Compile Include="CajaRackBO.vb" />
+    <Compile Include="DatosBusquedaBO.vb" />
+    <Compile Include="DepartamentosBO.vb" />
     <Compile Include="DocBindingBO.vb" />
+    <Compile Include="DocumentosBO.vb" />
+    <Compile Include="ImagenesBO.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -84,8 +88,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PlantillasBO.vb" />
     <Compile Include="RackBO.vb" />
     <Compile Include="RackBodegaBO.vb" />
+    <Compile Include="TipoDocBO.vb" />
     <Compile Include="User_ModBOL.vb" />
     <Compile Include="UsuarioBOL.vb" />
   </ItemGroup>

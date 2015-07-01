@@ -10,8 +10,7 @@ Public NotInheritable Class CajaRackDAL
     End Sub
 
     Public Shared Function Create(cajar As CajasRackEntity) As CajasRackEntity
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
- & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "INSERT INTO Cajas_rack ( id_caja, id_rack, id_usuario, fecha_insercion) " & _
                                 "VALUES ( @id_caja, @id_rack, @id_usuario, @fecha_insercion) "
@@ -33,8 +32,7 @@ Public NotInheritable Class CajaRackDAL
     Public Shared Function GetCaja() As List(Of CajaEntity)
         Dim list As New List(Of CajaEntity)()
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "select id_caja, codigo from Cajas where id_caja not in (select id_caja from Cajas_rack)"
@@ -64,8 +62,7 @@ Public NotInheritable Class CajaRackDAL
         Dim list As New List(Of RackEntity)()
 
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_racks, codigo from Racks"
@@ -94,8 +91,7 @@ Public NotInheritable Class CajaRackDAL
     'trae el id del dep de las cajas
     Public Shared Function Getdepcaja(id_dep As Integer) As Integer
         Dim depc As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_dep FROM Cajas where id_caja = @id_dep "
@@ -112,8 +108,7 @@ Public NotInheritable Class CajaRackDAL
     'trae el id del dep del rack
     Public Shared Function GetdepRack(id_dep As Integer) As Integer
         Dim depr As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_dep FROM Racks where id_racks = @id_dep "
@@ -131,8 +126,7 @@ Public NotInheritable Class CajaRackDAL
     '-----cuantas racks hay en el id que le envio
     Public Shared Function count(id_rack As Integer) As Integer
         Dim idrck As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT COUNT(*) FROM Cajas_rack where id_rack = @id_rack "
@@ -150,8 +144,7 @@ Public NotInheritable Class CajaRackDAL
     Public Shared Function Getcap(id_tipo As Integer) As Integer
         Dim cap As Integer
         ' cap = 0
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "select capacidad  from TipoRack where id_tipo = @id_tipo "
@@ -168,8 +161,7 @@ Public NotInheritable Class CajaRackDAL
     'compara el id del tipo del rack
     Public Shared Function GetTipoR(id_rack As Integer) As Integer
         Dim idtipo As Integer
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-  & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_tipo FROM Racks where id_racks = @id_racks "

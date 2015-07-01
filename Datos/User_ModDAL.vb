@@ -7,8 +7,7 @@ Imports Entidades
 Public Class User_ModDAL
     Public Shared Function Permiso(id_modulo As Integer, id_usario As Integer)
         Dim permisos As Integer
-        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
-       & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "Select permiso from User_Mod where id_modulo = @id_modulo and id_usuario = @id_usuario"
             Dim cmd As New SqlCommand(sql, conn)
@@ -20,8 +19,7 @@ Public Class User_ModDAL
     End Function
     Public Shared Function UpdatePermiso(id_modulo As Integer, id_usuario As Integer, permiso As Integer)
 
-        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
-       & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "UPDATE User_Mod set permiso = @permiso where id_modulo = @id_modulo and id_usuario = @id_usuario"

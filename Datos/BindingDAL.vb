@@ -12,8 +12,7 @@ Public NotInheritable Class BindingDAL
     Public Shared Function Exists(id_binding As Integer) As Boolean
         Dim nrorecord As Integer = 0
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT Count(*) " & _
@@ -30,8 +29,7 @@ Public NotInheritable Class BindingDAL
     End Function
 
     Public Shared Function Create(binding As BindingEntity) As BindingEntity
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
- & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "INSERT INTO Binding (id_tipo, id_dep, codigo) " & _
                                 "VALUES ( @id_tipo, @id_dep, @codigo) "
@@ -53,8 +51,7 @@ Public NotInheritable Class BindingDAL
         Dim list As New List(Of BindingEntity)()
 
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_binding, id_tipo, id_dep, codigo FROM Binding ORDER BY codigo"
@@ -71,8 +68,7 @@ Public NotInheritable Class BindingDAL
     End Function
 
     Public Shared Function Update(binding As BindingEntity) As BindingEntity
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
- & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "UPDATE Binding SET  " & _
                                 "id_tipo = @id_tipo, " & _
@@ -107,8 +103,7 @@ Public NotInheritable Class BindingDAL
         Dim list As New List(Of Departamento)()
 
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT  id_dep, descripcion FROM Departamentos"
@@ -144,8 +139,7 @@ Public NotInheritable Class BindingDAL
     Public Shared Function GetTipo() As List(Of Tipos)
         Dim list As New List(Of Tipos)()
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT  id_tipo, capacidad FROM TipoBinding"

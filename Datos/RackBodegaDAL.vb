@@ -10,8 +10,7 @@ Public NotInheritable Class RackBodegaDAL
     End Sub
 
     Public Shared Function Create(rbod As RacksBodegaEntity) As RacksBodegaEntity
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
- & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
             Dim sql As String = "INSERT INTO Racks_bodega ( id_rack, id_bodega, id_usuario, fecha_insercion) " & _
                                 "VALUES ( @id_rack, @id_bodega, @id_usuario, @fecha_insercion) "
@@ -33,8 +32,7 @@ Public NotInheritable Class RackBodegaDAL
     Public Shared Function GetRack() As List(Of RackEntity)
         Dim list As New List(Of RackEntity)()
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "select id_racks, codigo from Racks where id_racks not in (select id_rack from Racks_bodega)"
@@ -63,8 +61,7 @@ Public NotInheritable Class RackBodegaDAL
         Dim list As New List(Of BodegaEntity)()
 
 
-        Using conn As New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=SGDoc;" _
-   & "Integrated Security=true;user id=student;password=12345")
+        Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
 
             Dim sql As String = "SELECT id_bodega, codigo from Bodegas"
