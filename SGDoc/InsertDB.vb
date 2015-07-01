@@ -67,4 +67,5 @@ Public Class InsertDB
         cont = DocBindingBO.Count(CInt(ComboBox2.SelectedValue.ToString))
     End Sub
 
+    
 End Class
