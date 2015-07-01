@@ -12,7 +12,7 @@ Public NotInheritable Class BindingCajaDAL
     Public Shared Function Create(binc As BindingCajaEntity) As BindingCajaEntity
         Using conn As New SqlConnection(conexion.Conexion())
             conn.Open()
-            Dim sql As String = "INSERT INTO Binding_Caja (id_binding, id_caja,  id_usuario, fecha_insercion) " & _
+            Dim sql As String = "INSERT INTO Binding_Caja (id_binding, id_caja, id_usuario, fecha_insercion) " & _
                                 "VALUES ( @id_binding, @id_caja, @id_usuario, @fecha_insercion) "
 
             Dim cmd As New SqlCommand(sql, conn)

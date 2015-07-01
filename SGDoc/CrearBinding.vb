@@ -20,6 +20,7 @@ Public Class CrearBinding
         bin.id_dep = ComboBox1.SelectedValue
         bin.codigo = txtcod.Text
         BindingBO.Guardar(bin)
+        MsgBox("Binding Creado Correctamente...")
 
     End Sub
 

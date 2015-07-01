@@ -17,6 +17,7 @@ Public Class CrearRack
         rck.id_dep = ComboBox1.SelectedValue
         rck.codigo = txtcod.Text
         RackBO.Guardar(rck)
+        MsgBox("Rack Creado Correctamente")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

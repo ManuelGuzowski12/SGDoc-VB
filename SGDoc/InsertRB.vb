@@ -24,6 +24,7 @@ Public Class InsertRB
         rbod.id_usuario = txtuser.Text
         RackBodegaBO.Guardar(rbod)
         ComboBox1.DataSource = RackBodegaBO.GetRack
+        MsgBox("Insertado Correctamente...")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

@@ -35,7 +35,6 @@ Public Class InsertBC
             binc.id_caja = ComboBox2.SelectedValue
             binc.fecha_insercion = txtdate.Text
             binc.id_usuario = txtuser.Text
-
             BindingCajasBO.Guardar(binc)
             MsgBox("Insertado Correctamente...")
             ComboBox1.DataSource = BindingCajasBO.GetBinding

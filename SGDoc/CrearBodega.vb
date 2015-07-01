@@ -9,10 +9,14 @@ Public Class CrearBodega
         bod.codigo = txtcod.Text
         bod.descripcion = txtdesc.Text
         BodegaBO.Guardar(bod)
+        MsgBox("Bodega Creada Correctamente...")
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Close()
 
     End Sub
+
+   
 End Class

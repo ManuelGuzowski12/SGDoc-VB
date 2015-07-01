@@ -17,6 +17,8 @@ Public Class CrearCaja
         caja.id_dep = ComboBox1.SelectedValue
         caja.codigo = txtcod.Text
         CajaBO.Guardar(caja)
+        MsgBox("Caja Creada Correctamente")
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
