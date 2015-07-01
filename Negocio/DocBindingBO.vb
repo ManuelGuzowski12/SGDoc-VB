@@ -42,4 +42,9 @@ Public NotInheritable Class DocBindingBO
     Public Shared Function GetTipo(tipob As Integer) As Integer
         Return DocBindingDAL.GetTipoB(tipob)
     End Function
+
+    'Mostrar
+    Public Shared Function GetDocB(idbinding As Integer) As List(Of Documentos)
+        Return DocBindingDAL.GetDocBin(idbinding)
+    End Function
 End Class

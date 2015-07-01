@@ -29,7 +29,7 @@ Public NotInheritable Class DocBindingDAL
         Return docb
     End Function
 
-    'traer todos los documentos
+    'traer todos los documentos que no estan en los binding
     Public Shared Function GetDoc() As List(Of Documentos)
         Dim list As New List(Of Documentos)()
 
@@ -175,6 +175,39 @@ Public NotInheritable Class DocBindingDAL
         End Using
         Return idtipo
     End Function
+    '===============================MOSTRAR=================
 
+    Public Shared Function GetDocBin(id_binding As Integer) As List(Of Documentos)
+        Dim list As New List(Of Documentos)()
+
+
+        Using conn As New SqlConnection(conexion.Conexion())
+            conn.Open()
+
+            Dim sql As String = "select * from Documentos where id_documento in (select id_documento from Doc_binding where id_binding in (select id_binding = '" & id_binding & "' from Doc_binding))"
+            Dim cmd As New SqlCommand(sql, conn)
+
+
+            Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+            While reader.Read()
+                list.Add(LoadDocb(reader))
+            End While
+        End Using
+
+        Return list
+    End Function
+    Private Shared Function LoadDocb(reader As IDataReader) As Documentos
+        Dim doc As New Documentos()
+
+        doc.id_doc = Convert.ToString(reader("id_documento"))
+        doc.id_usuario = Convert.ToString(reader("id_usuario"))
+        doc.nombre = Convert.ToString(reader("nombre"))
+        doc.fecha_creacion = Convert.ToString(reader("fecha_creacion"))
+        doc.activacion = Convert.ToString(reader("activacion"))
+        doc.id_departamento = Convert.ToString(reader("id_dep"))
+
+        Return doc
+    End Function
 
 End Class

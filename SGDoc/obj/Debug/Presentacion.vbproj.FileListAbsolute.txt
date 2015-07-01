@@ -84,3 +84,4 @@ C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Permisos.resour
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Usuarios.resources
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.VerDoc.resources
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\Presentacion.vbproj.GenerateResource.Cache
+C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.MostrarBinding.resources

@@ -43,7 +43,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SGDoc.Login</StartupObject>
+    <StartupObject>SGDoc.MostrarBinding</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -141,6 +141,12 @@
     <Compile Include="Menu_Principal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MostrarBinding.Designer.vb">
+      <DependentUpon>MostrarBinding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarBinding.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -212,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_Principal.resx">
       <DependentUpon>Menu_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarBinding.resx">
+      <DependentUpon>MostrarBinding.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
