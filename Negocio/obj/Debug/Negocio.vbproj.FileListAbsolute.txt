@@ -43,3 +43,18 @@ C:\Users\zuleima\Documents\GitHub\SGDoc-VB\Negocio\obj\Debug\Negocio.vbproj.Gene
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\Negocio\obj\Debug\Negocio.dll
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\Negocio\obj\Debug\Negocio.xml
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\bin\Debug\Negocio.dll
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\bin\Debug\Negocio.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\bin\Debug\Datos.dll
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\bin\Debug\Entidades.dll
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\bin\Debug\Datos.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\bin\Debug\Datos.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\bin\Debug\Entidades.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\obj\Debug\Negocio.vbprojResolveAssemblyReference.cache
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\obj\Debug\Negocio.Resources.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\obj\Debug\Negocio.vbproj.GenerateResource.Cache
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\obj\Debug\Negocio.dll
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\obj\Debug\Negocio.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Negocio\obj\Debug\Negocio.pdb

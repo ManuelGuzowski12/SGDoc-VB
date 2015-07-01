@@ -34,3 +34,15 @@ C:\Users\zuleima\Documents\GitHub\SGDoc-VB\Datos\obj\Debug\Datos.vbproj.Generate
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\Datos\obj\Debug\Datos.dll
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\Datos\obj\Debug\Datos.xml
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\Datos\obj\Debug\Datos.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\bin\Debug\Datos.dll
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\bin\Debug\Datos.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\bin\Debug\Datos.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\bin\Debug\Entidades.dll
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\bin\Debug\Entidades.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\bin\Debug\Entidades.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\obj\Debug\Datos.dll
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\obj\Debug\Datos.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\Datos\obj\Debug\Datos.pdb

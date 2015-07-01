@@ -84,3 +84,36 @@ C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Permisos.resour
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Usuarios.resources
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.VerDoc.resources
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\Presentacion.vbproj.GenerateResource.Cache
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.exe
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\SGDoc.exe
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\SGDoc.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\SGDoc.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\Entidades.dll
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\Negocio.dll
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\Datos.dll
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\Entidades.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\Entidades.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\Negocio.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\Negocio.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\Datos.pdb
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\bin\Debug\Datos.xml
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\Presentacion.vbprojResolveAssemblyReference.cache
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.CrearBinding.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.CrearBodega.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.CrearCaja.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.CrearRack.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.doc.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.ImpImagen.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertBC.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertCR.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertDB.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertRB.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Login.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Menu_Principal.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Resources.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Permisos.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Usuarios.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.VerDoc.resources
+C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\Presentacion.vbproj.GenerateResource.Cache

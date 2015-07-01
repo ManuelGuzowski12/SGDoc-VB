@@ -190,6 +190,9 @@ Public Class VerDoc
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
         dgv.DataSource = DocumentosBO.buscarX(TextBox1.Text)
+        If TextBox1.Text = "" Then
+            recargar()
+        End If
     End Sub
 
 
