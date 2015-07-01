@@ -74,7 +74,6 @@ Public NotInheritable Class DocumentosDAL
             cmd.Parameters.AddWithValue("@id_dep", documento.id_departamento)
 
             documento.id_doc = Convert.ToString(cmd.ExecuteScalar())
-
         End Using
 
         Return documento
@@ -115,4 +114,6 @@ Public NotInheritable Class DocumentosDAL
         End Using
 
     End Function
+
+
 End Class

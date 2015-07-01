@@ -16,10 +16,9 @@ Public Class Login
             id_user = UsuarioBOL.GetId_user(username)
             If User_ModBOL.Permiso(10, id_user) = 1 Then
                 Menu_Principal.Show()
-                Me.Hide()
-            Else
-                MsgBox("No encontrado!...")
             End If
+        Else
+            MsgBox("No encontrado!...")
         End If
 
     End Sub

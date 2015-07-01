@@ -8,7 +8,8 @@ Public Class doc
 
     Private txt As TextBox() = New TextBox(1) {}
     Private lab As Label() = New Label(1) {}
-    Private pic As PictureBox() = New PictureBox(1) {}
+    Private pic As Boolean = False
+
     Private i As Long = 0
     Private imgCont As Long = 0
     Private bnd As Boolean = False
@@ -35,7 +36,20 @@ Public Class doc
             lab = Nothing
             Me.ResumeLayout()
             list_DatosBusq.Clear()
+
         End If
+        bnd = False
+        If pic = True Then
+            While Gimg.Controls.Count > 0
+                For Each Control In Gimg.Controls
+                    Gimg.Controls.Remove(Control)
+                Next
+            End While
+            Gimg.ResumeLayout()
+            list_Img.Clear()
+
+        End If
+
     End Function
     Private Function guardar()
         Dim doc As New Documentos()
@@ -47,6 +61,11 @@ Public Class doc
             .activacion = "1"
         End With
         Dim id_docuemnto As Documentos = DocumentosBO.InsertarDocumentos(doc)
+        If id_docuemnto.id_doc IsNot Nothing Then
+            Panel2.BackColor = Color.Coral
+            msj.Text = "Registro Guardado"
+
+        End If
         i = 0
         For Each l As DatosBusqueda In list_DatosBusq
             Dim x As New DatosBusqueda
@@ -122,6 +141,13 @@ Public Class doc
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         guardar()
+        limpiar()
+
+        TextBox2.Text = ""
+        ComboBox1.Refresh()
+        ComboBox2.Refresh()
+        DateTimePicker1.Refresh()
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -131,18 +157,18 @@ Public Class doc
         Abrir.Title = "seleccionar la imagen que se guardará en la base de datos"
         Abrir.RestoreDirectory = True
 
-        Dim pict As PictureBox = New PictureBox
+        Dim pict As New PictureBox()
+
         Dim y As Long = Gimg.Left
 
         With pict
-
             .Size = New System.Drawing.Size(50, 75)
             .Location = New Point(10 + ((.Left + .Width + 10) * imgCont), 30)
             .SizeMode = PictureBoxSizeMode.StretchImage
             .Visible = True
         End With
         Gimg.Controls.Add(pict)
-
+       
         If Abrir.ShowDialog = Windows.Forms.DialogResult.OK Then
             Label6.Text = Abrir.FileName
             pict.Image = Image.FromFile(Abrir.FileName)
@@ -159,10 +185,13 @@ Public Class doc
             pict.Image = Nothing
 
         End If
+        pic = True
     End Sub
 
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
+
+
 End Class

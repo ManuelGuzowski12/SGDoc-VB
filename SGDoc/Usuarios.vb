@@ -78,4 +78,8 @@ Public Class Usuarios
         Menu_Principal.Show()
         Me.Close()
     End Sub
+
+    Private Sub txt_buscar_TextChanged(sender As Object, e As EventArgs) Handles txt_buscar.TextChanged
+        dgv.DataSource = UsuarioBOL.Buscar(txt_buscar.Text)
+    End Sub
 End Class
