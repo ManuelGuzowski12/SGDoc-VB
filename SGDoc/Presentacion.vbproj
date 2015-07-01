@@ -43,7 +43,11 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
+<<<<<<< HEAD
     <StartupObject>SGDoc.MostrarCaja</StartupObject>
+=======
+    <StartupObject>SGDoc.Login</StartupObject>
+>>>>>>> origin/master
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
