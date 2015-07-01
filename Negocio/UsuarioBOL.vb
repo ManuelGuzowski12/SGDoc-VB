@@ -22,7 +22,8 @@ Public NotInheritable Class UsuarioBOL
         If UsuarioDAL.Exist(usuario.id_persona) Then
             MsgBox("Este usuario ya existe!...")
         Else
-            Return UsuarioDAL.Insert(usuario)
+            UsuarioDAL.Insert(usuario)
+            UsuarioDAL.setPermisos(usuario.id_usuario)
         End If
         Return usuario
     End Function
@@ -64,5 +65,8 @@ Public NotInheritable Class UsuarioBOL
             FinalString &= bt.ToString("x2")
         Next
         Return FinalString
+    End Function
+    Public Shared Function GetId_user(username As String)
+        Return UsuarioDAL.Get_idusuario(username)
     End Function
 End Class

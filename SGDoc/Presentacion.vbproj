@@ -69,10 +69,64 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrearBinding.designer.vb">
+      <DependentUpon>CrearBinding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrearBinding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearBodega.designer.vb">
+      <DependentUpon>CrearBodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrearBodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearCaja.designer.vb">
+      <DependentUpon>CrearCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrearCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearRack.designer.vb">
+      <DependentUpon>CrearRack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrearRack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertBC.designer.vb">
+      <DependentUpon>InsertBC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertBC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertCR.designer.vb">
+      <DependentUpon>InsertCR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertCR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertDB.designer.vb">
+      <DependentUpon>InsertDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertRB.designer.vb">
+      <DependentUpon>InsertRB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertRB.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Principal.Designer.vb">
+      <DependentUpon>Menu_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Principal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -90,6 +144,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Permisos.Designer.vb">
+      <DependentUpon>Permisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Permisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Session.vb" />
     <Compile Include="Usuarios.Designer.vb">
       <DependentUpon>Usuarios.vb</DependentUpon>
@@ -99,14 +159,44 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CrearBinding.resx">
+      <DependentUpon>CrearBinding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearBodega.resx">
+      <DependentUpon>CrearBodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearCaja.resx">
+      <DependentUpon>CrearCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearRack.resx">
+      <DependentUpon>CrearRack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertBC.resx">
+      <DependentUpon>InsertBC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertCR.resx">
+      <DependentUpon>InsertCR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertDB.resx">
+      <DependentUpon>InsertDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertRB.resx">
+      <DependentUpon>InsertRB.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal.resx">
+      <DependentUpon>Menu_Principal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permisos.resx">
+      <DependentUpon>Permisos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.vb</DependentUpon>
@@ -132,6 +222,9 @@
       <Project>{c34ef4a7-f397-4470-9f3b-16187785b157}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

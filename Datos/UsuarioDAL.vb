@@ -31,7 +31,7 @@ Public NotInheritable Class UsuarioDAL
             conn.Open()
             Dim sql As String = "INSERT INTO Personas (id_persona, nombre, apellido, direccion, telefono, sexo) " & _
                               "VALUES (@id_persona, @nombre, @apellido, @direccion, @telefono, @sexo);" _
-                              & "INSERT INTO Usuarios (id_persona, username, password, state) VALUES(@id_persona, @username, @password, 0);"
+                              & "INSERT INTO Usuarios (id_persona, username, password, state) VALUES(@id_persona, @username, @password, 0) SELECT SCOPE_IDENTITY()"
 
             Dim cmd As New SqlCommand(sql, conn)
 
@@ -43,7 +43,8 @@ Public NotInheritable Class UsuarioDAL
             cmd.Parameters.AddWithValue("@sexo", usuario.sexo)
             cmd.Parameters.AddWithValue("@username", usuario.username)
             cmd.Parameters.AddWithValue("@password", usuario.password)
-            cmd.ExecuteNonQuery()
+            usuario.id_usuario = Convert.ToInt32(cmd.ExecuteScalar())
+
         End Using
         Return usuario
     End Function
@@ -70,6 +71,18 @@ Public NotInheritable Class UsuarioDAL
         End Using
 
         Return usuario
+    End Function
+    Public Shared Function setPermisos(id_usuario As Integer)
+        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
+      & "Integrated Security=true;user id=student;password=12345")
+            conn.Open()
+            Dim sql As String = "insert into User_Mod(id_modulo, id_usuario, permiso)select  id_modulo,@id_usuario,'0' from  Modulo"
+            Dim cmd As New SqlCommand(sql, conn)
+            cmd.Parameters.AddWithValue("@id_usuario", id_usuario)
+            cmd.ExecuteNonQuery()
+
+        End Using
+        Return 0
     End Function
     Public Shared Function Desactivar_user(id_persona As String)
         Dim usuario As UsersEntidades = Nothing
@@ -127,6 +140,18 @@ Public NotInheritable Class UsuarioDAL
             nrorecord = Convert.ToInt32(cmd.ExecuteScalar)
         End Using
         Return nrorecord > 0
+    End Function
+    Public Shared Function Get_idusuario(username As String)
+        Dim idusuario As Integer
+        Using conn As New SqlConnection("Data Source=localhost\sqlexpress;Initial Catalog=sgdoc;" _
+       & "Integrated Security=true;user id=student;password=12345")
+            conn.Open()
+            Dim sql As String = "SELECT id_usuario from Usuarios where username = @username"
+            Dim cmd As New SqlCommand(sql, conn)
+            cmd.Parameters.AddWithValue("@username", username)
+            idusuario = Convert.ToInt32(cmd.ExecuteScalar)
+        End Using
+        Return idusuario
     End Function
 
     Private Shared Function LoadUsuario(reader As IDataReader) As UsersEntidades

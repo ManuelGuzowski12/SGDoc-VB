@@ -63,6 +63,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindingBO.vb" />
+    <Compile Include="BindingCajasBO.vb" />
+    <Compile Include="BodegaBO.vb" />
+    <Compile Include="CajaBO.vb" />
+    <Compile Include="CajaRackBO.vb" />
+    <Compile Include="DocBindingBO.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -78,6 +84,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="RackBO.vb" />
+    <Compile Include="RackBodegaBO.vb" />
+    <Compile Include="User_ModBOL.vb" />
     <Compile Include="UsuarioBOL.vb" />
   </ItemGroup>
   <ItemGroup>

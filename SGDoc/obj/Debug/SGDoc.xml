@@ -15,6 +15,10 @@ SGDoc
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:SGDoc.My.Resources.Resources.doc">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="T:SGDoc.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.

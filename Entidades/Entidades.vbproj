@@ -62,6 +62,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindingCajaEntity.vb" />
+    <Compile Include="BindingEntity.vb" />
+    <Compile Include="BodegaEntity.vb" />
+    <Compile Include="CajaEntity.vb" />
+    <Compile Include="CajasRackEntity.vb" />
+    <Compile Include="Departamento.vb" />
+    <Compile Include="DocBindingEntity.vb" />
+    <Compile Include="Documentos.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -78,6 +86,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="PersonaEntidades.vb" />
+    <Compile Include="RackEntity.vb" />
+    <Compile Include="RacksBodegaEntity.vb" />
+    <Compile Include="Tipos.vb" />
     <Compile Include="UsersEntidades.vb" />
   </ItemGroup>
   <ItemGroup>

@@ -7,7 +7,7 @@ Public Class Usuarios
     Dim usuario As New UsersEntidades
     Private Sub Usuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dgv.DataSource = UsuarioBOL.GetAll()
-        Label_username.Text = user
+        txt_id_usuario.Hide()
     End Sub
 
 
@@ -22,6 +22,7 @@ Public Class Usuarios
         usuario.password = txt_password.Text
         UsuarioBOL.Save_User(usuario)
         dgv.DataSource = UsuarioBOL.GetAll()
+        Clear_textbox()
     End Sub
 
     Private Sub dgv_CellContentClick(sender As Object, e As Windows.Forms.DataGridViewCellEventArgs) Handles dgv.CellContentClick
@@ -33,6 +34,7 @@ Public Class Usuarios
         txt_sexo.Text = dgv.CurrentRow.Cells(8).Value.ToString
         txt_username.Text = dgv.CurrentRow.Cells(1).Value.ToString
         txt_password.Text = dgv.CurrentRow.Cells(2).Value.ToString
+        txt_id_usuario.Text = dgv.CurrentRow.Cells(0).Value.ToString
         txt_idpersona.Enabled = False
     End Sub
 
@@ -67,4 +69,13 @@ Public Class Usuarios
         txt_password.Text = ""
     End Sub
     
+    Private Sub boton_permisos_Click(sender As Object, e As EventArgs) Handles boton_permisos.Click
+        id = txt_id_usuario.Text
+        Permisos.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Menu_Principal.Show()
+        Me.Close()
+    End Sub
 End Class

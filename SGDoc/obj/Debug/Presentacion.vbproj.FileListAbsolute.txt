@@ -38,3 +38,13 @@ C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Login.resources
 C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Resources.resources
 C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Usuarios.resources
 C:\SGDoc-VB\SGDoc\obj\Debug\Presentacion.vbproj.GenerateResource.Cache
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Menu_Principal.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Permisos.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.CrearBinding.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.CrearBodega.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.CrearCaja.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.CrearRack.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertBC.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertCR.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertDB.resources
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.InsertRB.resources

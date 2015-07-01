@@ -42,15 +42,16 @@ Partial Class Usuarios
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Button_Eliminar_user = New System.Windows.Forms.Button()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label_username = New System.Windows.Forms.Label()
+        Me.boton_permisos = New System.Windows.Forms.Button()
+        Me.txt_id_usuario = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgv
         '
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv.Location = New System.Drawing.Point(13, 145)
+        Me.dgv.Location = New System.Drawing.Point(18, 149)
         Me.dgv.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.dgv.Name = "dgv"
         Me.dgv.Size = New System.Drawing.Size(770, 173)
@@ -58,22 +59,24 @@ Partial Class Usuarios
         '
         'Button_crear_user
         '
-        Me.Button_crear_user.Location = New System.Drawing.Point(32, 22)
+        Me.Button_crear_user.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button_crear_user.Location = New System.Drawing.Point(32, -1)
         Me.Button_crear_user.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button_crear_user.Name = "Button_crear_user"
-        Me.Button_crear_user.Size = New System.Drawing.Size(100, 26)
+        Me.Button_crear_user.Size = New System.Drawing.Size(100, 33)
         Me.Button_crear_user.TabIndex = 1
         Me.Button_crear_user.Text = "Crear "
-        Me.Button_crear_user.UseVisualStyleBackColor = True
+        Me.Button_crear_user.UseVisualStyleBackColor = False
         '
         'Button_actualizar_user
         '
-        Me.Button_actualizar_user.Location = New System.Drawing.Point(32, 62)
+        Me.Button_actualizar_user.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button_actualizar_user.Location = New System.Drawing.Point(32, 38)
         Me.Button_actualizar_user.Name = "Button_actualizar_user"
-        Me.Button_actualizar_user.Size = New System.Drawing.Size(100, 26)
+        Me.Button_actualizar_user.Size = New System.Drawing.Size(100, 32)
         Me.Button_actualizar_user.TabIndex = 2
         Me.Button_actualizar_user.Text = "Actualizar"
-        Me.Button_actualizar_user.UseVisualStyleBackColor = True
+        Me.Button_actualizar_user.UseVisualStyleBackColor = False
         '
         'txt_idpersona
         '
@@ -114,7 +117,7 @@ Partial Class Usuarios
         '
         Me.txt_sexo.Location = New System.Drawing.Point(424, 101)
         Me.txt_sexo.Name = "txt_sexo"
-        Me.txt_sexo.Size = New System.Drawing.Size(100, 23)
+        Me.txt_sexo.Size = New System.Drawing.Size(31, 23)
         Me.txt_sexo.TabIndex = 8
         '
         'txt_username
@@ -206,38 +209,50 @@ Partial Class Usuarios
         '
         'Button_Eliminar_user
         '
-        Me.Button_Eliminar_user.Location = New System.Drawing.Point(32, 102)
+        Me.Button_Eliminar_user.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button_Eliminar_user.Location = New System.Drawing.Point(32, 114)
         Me.Button_Eliminar_user.Name = "Button_Eliminar_user"
-        Me.Button_Eliminar_user.Size = New System.Drawing.Size(100, 23)
+        Me.Button_Eliminar_user.Size = New System.Drawing.Size(100, 29)
         Me.Button_Eliminar_user.TabIndex = 19
         Me.Button_Eliminar_user.Text = "Eliminar"
-        Me.Button_Eliminar_user.UseVisualStyleBackColor = True
+        Me.Button_Eliminar_user.UseVisualStyleBackColor = False
         '
-        'Label9
+        'boton_permisos
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(652, -2)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(67, 15)
-        Me.Label9.TabIndex = 20
-        Me.Label9.Text = "Loged as"
+        Me.boton_permisos.BackColor = System.Drawing.Color.RoyalBlue
+        Me.boton_permisos.Location = New System.Drawing.Point(32, 76)
+        Me.boton_permisos.Name = "boton_permisos"
+        Me.boton_permisos.Size = New System.Drawing.Size(100, 32)
+        Me.boton_permisos.TabIndex = 24
+        Me.boton_permisos.Text = "Permisos"
+        Me.boton_permisos.UseVisualStyleBackColor = False
         '
-        'Label_username
+        'txt_id_usuario
         '
-        Me.Label_username.AutoSize = True
-        Me.Label_username.Location = New System.Drawing.Point(725, -2)
-        Me.Label_username.Name = "Label_username"
-        Me.Label_username.Size = New System.Drawing.Size(74, 15)
-        Me.Label_username.TabIndex = 21
-        Me.Label_username.Text = "Username"
+        Me.txt_id_usuario.Location = New System.Drawing.Point(541, 5)
+        Me.txt_id_usuario.Name = "txt_id_usuario"
+        Me.txt_id_usuario.Size = New System.Drawing.Size(100, 23)
+        Me.txt_id_usuario.TabIndex = 25
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Teal
+        Me.Button1.Location = New System.Drawing.Point(634, 110)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(105, 29)
+        Me.Button1.TabIndex = 26
+        Me.Button1.Text = "Salir"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Usuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(801, 330)
-        Me.Controls.Add(Me.Label_username)
-        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.txt_id_usuario)
+        Me.Controls.Add(Me.boton_permisos)
         Me.Controls.Add(Me.Button_Eliminar_user)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -287,6 +302,7 @@ Partial Class Usuarios
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Button_Eliminar_user As System.Windows.Forms.Button
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label_username As System.Windows.Forms.Label
+    Friend WithEvents boton_permisos As System.Windows.Forms.Button
+    Friend WithEvents txt_id_usuario As System.Windows.Forms.TextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
