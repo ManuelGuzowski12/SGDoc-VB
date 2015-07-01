@@ -45,6 +45,8 @@ Partial Class Usuarios
         Me.boton_permisos = New System.Windows.Forms.Button()
         Me.txt_id_usuario = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.txt_buscar = New System.Windows.Forms.TextBox()
+        Me.lABEL = New System.Windows.Forms.Label()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -244,12 +246,30 @@ Partial Class Usuarios
         Me.Button1.Text = "Salir"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'txt_buscar
+        '
+        Me.txt_buscar.Location = New System.Drawing.Point(528, 114)
+        Me.txt_buscar.Name = "txt_buscar"
+        Me.txt_buscar.Size = New System.Drawing.Size(100, 23)
+        Me.txt_buscar.TabIndex = 27
+        '
+        'lABEL
+        '
+        Me.lABEL.AutoSize = True
+        Me.lABEL.Location = New System.Drawing.Point(472, 121)
+        Me.lABEL.Name = "lABEL"
+        Me.lABEL.Size = New System.Drawing.Size(52, 15)
+        Me.lABEL.TabIndex = 28
+        Me.lABEL.Text = "Buscar"
+        '
         'Usuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(801, 330)
+        Me.Controls.Add(Me.lABEL)
+        Me.Controls.Add(Me.txt_buscar)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txt_id_usuario)
         Me.Controls.Add(Me.boton_permisos)
@@ -305,4 +325,6 @@ Partial Class Usuarios
     Friend WithEvents boton_permisos As System.Windows.Forms.Button
     Friend WithEvents txt_id_usuario As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents txt_buscar As System.Windows.Forms.TextBox
+    Friend WithEvents lABEL As System.Windows.Forms.Label
 End Class

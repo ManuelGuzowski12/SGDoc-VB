@@ -23,6 +23,21 @@ Public NotInheritable Class UsuarioDAL
         End Using
         Return list
     End Function
+    Public Shared Function Buscar(busco As String) As List(Of UsersEntidades)
+        Dim list As New List(Of UsersEntidades)
+        Using conn As New SqlConnection(conexion.Conexion())
+            conn.Open()
+            Dim sql As String = "select * from Personas p inner join Usuarios u on (u.id_persona = p.id_persona) " & _
+                "where p.nombre like '%" & busco & "%' or p.apellido like '%" & busco & "%' or u.id_usuario like '%" & busco & "%'" & _
+                " or u.username like '%" & busco & "%' or u.id_persona like '%" & busco & "%' or p.telefono like '%" & busco & "%' or p.direccion like '%" & busco & "%'"
+            Dim cmd As New SqlCommand(sql, conn)
+            Dim reader As SqlDataReader = cmd.ExecuteReader
+            While reader.Read()
+                list.Add(LoadUsuario(reader))
+            End While
+        End Using
+        Return list
+    End Function
 
     Public Shared Function Insert(usuario As UsersEntidades) As UsersEntidades
         Using conn As New SqlConnection(conexion.Conexion())
