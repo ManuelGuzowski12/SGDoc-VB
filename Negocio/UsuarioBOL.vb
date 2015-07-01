@@ -14,6 +14,9 @@ Public NotInheritable Class UsuarioBOL
     Public Shared Function GetAll() As List(Of UsersEntidades)
         Return UsuarioDAL.GetAll
     End Function
+    Public Shared Function Buscar(busco As String) As List(Of UsersEntidades)
+        Return UsuarioDAL.Buscar(busco)
+    End Function
     Public Shared Function Save_User(usuario As UsersEntidades) As UsersEntidades
         Dim user As New UsuarioBOL
         Dim password As String
