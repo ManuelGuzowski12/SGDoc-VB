@@ -12,6 +12,7 @@ Public Class VerDoc
     Private lab As Label() = New Label(1) {}
     Private i As Long = 0
     Private documentoTemp As Documentos = New Documentos
+    Private mostrando As Boolean = False
 
     Private Sub VerDoc_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         recargar()
@@ -26,16 +27,18 @@ Public Class VerDoc
     End Sub
     Private Function limpiar()
 
-        For x As Integer = 0 To txt.Count - 1 Step 1
-            GTxt.Controls.Remove(txt(x))
+        If existen_imagenes = True Then
+            For x As Integer = 0 To txt.Count - 1 Step 1
+                GTxt.Controls.Remove(txt(x))
 
-            GTxt.Controls.Remove(lab(x))
+                GTxt.Controls.Remove(lab(x))
 
-        Next
+            Next
 
-        txt = Nothing
-        lab = Nothing
-        Me.ResumeLayout()
+            txt = Nothing
+            lab = Nothing
+            Me.ResumeLayout()
+        End If
 
     End Function
     Private Function crearTxt(ByVal id_doc As Integer)
@@ -136,7 +139,7 @@ Public Class VerDoc
         End With
         documentoTemp.id_doc = doc.id_doc
         existen_imagenes = True
-
+        mostrando = True
 
     End Function
     Private Function limpiarImg()
@@ -189,8 +192,15 @@ Public Class VerDoc
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        If mostrando = True Then
+            limpiar()
+            limpiarImg()
+            recargar()
+        End If
+        mostrando = False
         dgv.DataSource = DocumentosBO.buscarX(TextBox1.Text)
         If TextBox1.Text = "" Then
+           
             recargar()
         End If
     End Sub
