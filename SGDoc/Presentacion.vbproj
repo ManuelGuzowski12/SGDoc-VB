@@ -43,7 +43,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SGDoc.MostrarBinding</StartupObject>
+    <StartupObject>SGDoc.MostrarCaja</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -147,6 +147,12 @@
     <Compile Include="MostrarBinding.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MostrarCaja.Designer.vb">
+      <DependentUpon>MostrarCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -221,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MostrarBinding.resx">
       <DependentUpon>MostrarBinding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarCaja.resx">
+      <DependentUpon>MostrarCaja.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

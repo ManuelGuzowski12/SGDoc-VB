@@ -41,4 +41,9 @@ Public NotInheritable Class BindingCajasBO
         Return BindingCajaDAL.GetTipoC(tipoc)
     End Function
 
+    'mostrar
+    Public Shared Function GetBinc(idcaja As Integer) As List(Of BindingEntity)
+        Return BindingCajaDAL.GetBinCaja(idcaja)
+    End Function
+
 End Class

@@ -173,4 +173,38 @@ Public NotInheritable Class BindingCajaDAL
         End Using
         Return idtipo
     End Function
+
+    '==================MOSTRAR===========================
+
+    Public Shared Function GetBinCaja(id_caja As Integer) As List(Of BindingEntity)
+        Dim list As New List(Of BindingEntity)()
+
+
+        Using conn As New SqlConnection(conexion.Conexion())
+            conn.Open()
+
+            Dim sql As String = "select * from Binding where id_binding in (select id_binding from Binding_Caja where id_caja in (select id_caja = '" & id_caja & "' from Binding_Caja))"
+            Dim cmd As New SqlCommand(sql, conn)
+
+
+            Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+            While reader.Read()
+                list.Add(LoadBinc(reader))
+            End While
+        End Using
+        Return list
+    End Function
+
+    Private Shared Function LoadBinc(reader As IDataReader) As BindingEntity
+        Dim bin As New BindingEntity()
+
+        bin.id_binding = Convert.ToString(reader("id_binding"))
+        bin.id_tipo = Convert.ToString(reader("id_tipo"))
+        bin.id_dep = Convert.ToString(reader("id_dep"))
+        bin.codigo = Convert.ToString(reader("codigo"))
+       
+
+        Return bin
+    End Function
 End Class
