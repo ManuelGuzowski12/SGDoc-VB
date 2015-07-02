@@ -43,13 +43,13 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-<<<<<<< HEAD
-    <StartupObject>SGDoc.MostrarCaja</StartupObject>
-=======
     <StartupObject>SGDoc.Login</StartupObject>
->>>>>>> origin/master
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Negocio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Negocio\bin\Debug\Negocio.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -195,6 +195,7 @@
   <ItemGroup>
     <EmbeddedResource Include="CrearBinding.resx">
       <DependentUpon>CrearBinding.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="CrearBodega.resx">
       <DependentUpon>CrearBodega.vb</DependentUpon>
@@ -263,17 +264,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\doc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.vbproj">
+      <Project>{176d7017-0ed0-4cba-83b3-8acaf927d742}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.vbproj">
       <Project>{478f0ecf-7de8-4301-9092-ee3988ba2b0d}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Negocio\Negocio.vbproj">
-      <Project>{c34ef4a7-f397-4470-9f3b-16187785b157}</Project>
-      <Name>Negocio</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\doc.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

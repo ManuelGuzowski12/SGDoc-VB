@@ -123,6 +123,10 @@
       <Project>{478f0ecf-7de8-4301-9092-ee3988ba2b0d}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SGDoc\Presentacion.vbproj">
+      <Project>{148fd074-8a5b-4c3a-a9fd-bd31d03330f1}</Project>
+      <Name>Presentacion</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

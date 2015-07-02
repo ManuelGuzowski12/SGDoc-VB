@@ -106,4 +106,8 @@ Public Class Menu_Principal
     Private Sub MostrarBindingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MostrarBindingsToolStripMenuItem.Click
         MostrarBinding.Show()
     End Sub
+
+    Private Sub MostrarCajaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MostrarCajaToolStripMenuItem.Click
+        MostrarCaja.Show()
+    End Sub
 End Class

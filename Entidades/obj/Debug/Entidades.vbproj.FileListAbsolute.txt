@@ -10,7 +10,6 @@ C:\Users\robe\Desktop\Soft5\SGDoc\Entidades\obj\Debug\Entidades.vbprojResolveAss
 C:\SGDoc-VB\Entidades\bin\Debug\Entidades.dll
 C:\SGDoc-VB\Entidades\bin\Debug\Entidades.pdb
 C:\SGDoc-VB\Entidades\bin\Debug\Entidades.xml
-C:\SGDoc-VB\Entidades\obj\Debug\Entidades.vbprojResolveAssemblyReference.cache
 C:\SGDoc-VB\Entidades\obj\Debug\Entidades.Resources.resources
 C:\SGDoc-VB\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.Cache
 C:\SGDoc-VB\Entidades\obj\Debug\Entidades.dll
