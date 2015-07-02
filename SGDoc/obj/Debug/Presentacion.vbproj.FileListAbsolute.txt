@@ -84,6 +84,9 @@ C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Permisos.resour
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Usuarios.resources
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.VerDoc.resources
 C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\Presentacion.vbproj.GenerateResource.Cache
+<<<<<<< HEAD
+C:\Users\zuleima\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.MostrarBinding.resources
+=======
 C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.exe
 C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.xml
 C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.pdb
@@ -117,3 +120,4 @@ C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Permisos.re
 C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Usuarios.resources
 C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.VerDoc.resources
 C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\Presentacion.vbproj.GenerateResource.Cache
+>>>>>>> origin/master
