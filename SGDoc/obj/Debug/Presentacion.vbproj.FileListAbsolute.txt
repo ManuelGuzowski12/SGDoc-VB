@@ -121,3 +121,4 @@ C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.Usuarios.re
 C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\SGDoc.VerDoc.resources
 C:\Users\Mel Nielsen\Documents\GitHub\SGDoc-VB\SGDoc\obj\Debug\Presentacion.vbproj.GenerateResource.Cache
 >>>>>>> origin/master
+C:\SGDoc-VB\SGDoc\obj\Debug\SGDoc.MostrarBinding.resources

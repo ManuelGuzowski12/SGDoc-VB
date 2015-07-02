@@ -102,4 +102,8 @@ Public Class Menu_Principal
     Private Sub ModificarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificarToolStripMenuItem.Click
         VerDoc.Show()
     End Sub
+
+    Private Sub MostrarBindingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MostrarBindingsToolStripMenuItem.Click
+        MostrarBinding.Show()
+    End Sub
 End Class

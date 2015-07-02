@@ -43,7 +43,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SGDoc.MostrarBinding</StartupObject>
+    <StartupObject>SGDoc.Login</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
